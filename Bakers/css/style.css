@@ -1,0 +1,232 @@
+/* nav */
+.nav-distance{
+  padding: 2.1% 7.7%
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #B55800;
+}
+
+/* home */
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0px;
+}
+
+slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+}
+ 
+slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+ 
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url(../images/work.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ 
+slide:nth-child(2){
+  left: 100%;
+  animation-delay: 2s;
+  background-image: url(../images/dp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ 
+slide:nth-child(3){
+  left: 100%;
+  animation-delay: 5s;
+  background-image: url(../images/croissant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ 
+slide:nth-child(4){
+  left: 100%;
+  animation-delay: 8s;
+  background-image: url(../images/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ 
+slide p {
+  font-family: Comfortaa;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 340px;
+  color: #fff;
+}
+ 
+@keyframes slide {
+  0% { left: 100%; width: 100%; }
+  5% { left: 0%; }
+  25% { left: 0%; }
+  30% { left: -100%; width: 100%; }
+  30.0001% { left: -100%; width: 0%; }
+  100% { left: 100%; width: 0%; }
+}
+ 
+/* footer */
+#mainFooter {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+
+/* about */
+.about{
+  background-image: url(../images/dough.jpg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about:hover{
+  filter: grayscale();
+}
+
+.text{
+  padding-top: 50px;
+}
+.text p{
+  margin-top: 50px;
+}
+
+
+/* contact */
+.wrapper {
+  margin: 100px auto 0;
+  width: 100%;
+  max-width: 680px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* content */
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  letter-spacing: 1px;
+}
+
+
+/* form */
+.form {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form {
+  width: 100%;
+  min-height: 65px;
+  margin: 10px 0;
+}
+
+.form input[type="text"],
+.form textarea {
+  border: 2px solid #B55800;
+  padding: 5px 5px;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #B55800;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+    0 0 8px rgba(76, 161, 175, 0.5);
+}
+
+.form .label {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* top-contact */
+.top-form .inner-form {
+  width: 29.9%;
+  float: left;
+  margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+  margin-right: 0;
+}
+
+
+/* middle-form */
+.middle-form {
+  clear: both;
+}
+
+/* bottom-form */
+.bottom-form textarea {
+  height: 120px;
+}
+
+.btn {
+  background: #B55800;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    margin: 25px auto 0;
+  }
+  .top-form .inner-form {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .top-form,
+  .middle-form,
+  .bottom-form {
+    margin: 5px 0;
+  }
+  .form {
+    margin-top: 10px;
+  }
+  .form input[type="text"],
+  .form textarea {
+     width: 100%;
+     box-sizing: border-box;
+  }
+}
